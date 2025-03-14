@@ -11,10 +11,10 @@ jobs:
     echo-goodbye:
         runs-on: ubuntu-latest
         steps:
-            - name: Custom Error Step
+            - name: Custom Sucess Step
               run: |
-                echo "This step will fail"
-                exit 1  # 自定义错误
+                echo "This step will Sucess"
+                exit 0
             - name: Say goodBye
               run: echo "Good bye"
 
