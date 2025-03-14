@@ -16,6 +16,7 @@ jobs:
                 echo "I will fail"
                 exit 1
             - name: Say goodBye
+              if: success()  # 仅在前一步成功时执行
               run: echo "Good bye"
 
             
